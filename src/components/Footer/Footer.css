@@ -1,0 +1,99 @@
+.footer {
+    padding: 60px 100px;
+    font-family: Inter;
+}
+
+.footerLogoImg {
+    width: 30px;
+    height: 30px;
+}
+
+.footerTexts {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer-navs {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 55%;
+    font-size: 14px;
+    align-items: center;
+    color: #6A6D70;
+}
+
+.footer-navs h5 {
+    font-weight: 900;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #6A6D70;
+}
+
+.copyrights div {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+.subscriptions {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    gap: 10px;
+    font-size: 13px;
+    color: #6A6D70;
+}
+
+.subscriptions form input {
+    width: 60%;
+    margin-right: 10px;
+    height: 30px;
+    padding: 2px 4px;
+    outline: none;
+}
+
+.subscriptions form button {
+    border-radius: 40px;
+    border: 1px solid black;
+    padding: 7px 10px;
+}
+
+@media (max-width: 820px) {
+
+    .subscriptions {
+        text-align: center;
+    }
+
+    .footerTexts {
+        align-self: center;
+        flex-direction: column;
+        /* gap: 30px; */
+        /* align-items: center; */
+    }
+
+    .footerLogoImg {
+        margin: 0 auto;
+    }
+
+    .footer-navs {
+        flex-basis: 100%;
+        align-self: stretch;
+    }
+
+    .copyrights {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .footer {
+        padding: 10px 20px 20px 10px;
+    }
+}

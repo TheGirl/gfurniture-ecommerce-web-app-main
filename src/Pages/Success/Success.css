@@ -1,0 +1,32 @@
+.successMessage {
+    background-color: #EEF2FB;
+    width: 99%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.successMessageContainer {
+    height: 250px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: rgb(230, 227, 227);
+    border-radius: 10px;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.successMessageContainer button {
+    padding: 10px 30px;
+    border: 0;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #C900C1;
+    border-radius: 5px;
+    font-family: Inter;
+}
+.successMessageContainer button a {
+    text-decoration: none;
+    color: #ffffff;
+}

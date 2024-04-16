@@ -1,0 +1,172 @@
+.SuccessHistory {
+    display: flex;
+    padding: 80px 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.SuccessHistory img {
+    width: 450px;
+    height: 530px;
+}
+
+.SuccessHistoryHeaderTexts {
+    display: flex;
+    flex-direction: column;
+}
+
+.SuccessHistoryHeaderTexts p:nth-of-type(1) {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.SuccessHistoryHeaderTexts h1 {
+    color:#C900C1;
+    font-family: Sansation;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+
+.SuccessHistoryHeaderTexts p:nth-of-type(2) {
+    color: #C900C1;
+    margin-top: 25px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+.stats {
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats div h1 {
+    color: #6A6D70;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.stats div p {
+    color: #6A6D70;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (max-width: 1184px) {
+    .SuccessHistory img {
+        width: 380px;
+        height: 460px;
+    }
+
+    .SuccessHistoryHeaderTexts h1 {
+        font-size: 35px;
+    }
+
+    .stats div h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .SuccessHistory img {
+        width: 350px;
+        height: 420px;
+    }
+
+    .SuccessHistoryHeaderTexts h1 {
+        font-size: 28px;
+    }
+
+    .stats div h1 {
+        font-size: 28px;
+    }
+
+    .SuccessHistoryHeaderTexts p:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    .stats div p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    .SuccessHistory img {
+        width: 330px;
+        height: 380px;
+    }
+
+    .SuccessHistoryHeaderTexts h1 {
+        font-size: 25px;
+    }
+
+    .stats div h1 {
+        font-size: 25px;
+    }
+
+    .SuccessHistoryHeaderTexts p:nth-of-type(2) {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .SuccessHistory {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .SuccessHistory img {
+        width: 384px;
+        height: 450px;
+    }
+
+    .SuccessHistoryHeaderTexts h1 {
+        font-size: 45px;
+    }
+
+    .stats div h1 {
+        font-size: 40px;
+    }
+
+    .SuccessHistoryHeaderTexts p:nth-of-type(2) {
+        font-size: 18px;
+    }
+
+    .stats {
+        padding-right: 0px;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .stats div p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 570px) {
+    .SuccessHistory {
+        padding: 20px 20px 80px 20px;
+        background-color: #EEF2FB;
+    }
+
+    .SuccessHistory img {
+        width: 324px;
+        height: 406px;
+    }
+
+    /* .SuccessHistoryHeaderTexts, .stats {
+        padding-left: 40px;
+        padding-right: 40px;
+    } */
+}

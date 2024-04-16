@@ -1,0 +1,192 @@
+.CategoryHead, .similarItems {
+    margin-top: 0px;
+    padding: 0px 100px 0px 100px;
+    font-family: Sansation;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.CategoryHead h1, .similarItems h1 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+.CategoryHeadNav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.CategoryHeadNav div {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+.optionsicon {
+    display: none;
+    transform: rotate(90deg);
+    /* align-self: center; */
+}
+
+.filter {
+    display: none;
+}
+
+@media (max-width: 840px) {
+
+    .CategoryHeadNav {
+        margin-bottom: 30px;
+    }
+
+    .CategoryHeadNav div {
+        display: none;
+    }
+
+    .optionsicon {
+        display: block;
+        margin-top: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .filter {
+        display: block;
+        /* background: #ceced1; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.4s ease;
+        z-index: 21;
+        /* opacity: .9; */
+    }
+
+    
+    .CategoryHead h1, .similarItems h1 {
+        font-size: 35px;
+        /* margin-top: 0; */
+    }
+
+
+    .filterContainer {
+        padding: 40px 100px 0px 100px;
+        background-color: #ffffff;
+        /* width: 100%; */
+        height: 100vh;
+        margin-top: 100px;
+        font-family: sensationBold;
+        border-radius: 60px 60px 0px 0px;
+        overflow: scroll;
+        animation-name: filterAnimation;
+        animation-duration: .5s;
+        animation-timing-function: ease-in;
+        
+    }
+
+    @keyframes filterAnimation {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+          }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+    }
+
+    .filterContainer button {
+        width: 100%;
+        padding: 20px 40px;
+        margin-top: 30px;
+        font-size: 25px;
+        border-radius: 50px;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Inter;
+    }
+
+    .filterContainerHeading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filterContainerHeading {
+        font-size: 30px;
+    }
+
+    .filter-close-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .filterNavItem {
+        color: #6A6D70;
+    }
+
+    .filterContainerNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filterContainerNavOption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filterContainerNavOption p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 675px) {
+
+    .filterContainer {
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .filterContainer {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .CategoryHead, .similarItems {
+        padding: 0px 50px 0px 40px;
+    }
+    
+    .CategoryHeadNav {
+        margin-bottom: 0px;
+    }
+
+    .filterContainerHeading {
+        font-size: 18px;
+    }
+
+    .filterNavItem {
+        font-size: 15px;
+    }
+
+    .filterContainer button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .filterContainerNavOption p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 455px) {
+    .CategoryHead h1, .similarItems h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .CategoryHead, .similarItems {
+        padding: 20px 20px 0px 20px;
+    }
+}

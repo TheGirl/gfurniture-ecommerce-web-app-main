@@ -1,0 +1,156 @@
+.productInfo {
+    padding: 0px 100px 50px 100px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.productInfo p {
+    /* font-family: Inter; */
+}
+
+.productInfoContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.productImagesContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.switchImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.switchImages img {
+    width: 133px;
+    height: 85.906px;
+    margin-bottom: 10px;
+} 
+
+.bigProductImage {
+    width: 400px;
+    height: 370px;
+}
+
+.mobileHeading {
+    display: none;
+}
+
+.productInfoNav {
+    font-family: Inter;
+    font-weight: 500;
+    color: #6A6D70;
+    padding-bottom: 40px;
+}
+
+.productName {
+    font-size: 30px;
+    /* font-family: Sansation; */
+    font-family: sansation;
+    margin-Bottom: 0;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+.ProductShortInfo {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 145.414%;
+    font-family: Sansation;
+    color: rgba(94, 93, 108, 0.56);
+}
+
+.productPrice {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.productCtaButtons p {
+    padding: 16px;
+}
+
+.productCtaButtons p {
+    /* justify-content: center; */
+    font-size: 18px;
+}
+
+.convincingInfo div {
+    padding: 10px 20px;
+}
+
+.fbt h3 {
+    font-family: sansation;
+    font-size: 35px;
+}
+
+@media (max-width: 900px) {
+    .productInfoContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .switchImages {
+        display: none;
+    }
+
+    .productCtaButtons {
+        /* justify-content: center; */
+        margin-top: 20px;
+    }
+
+    .productCtaButtons p {
+        justify-content: center;
+    }
+
+    .bigProductImage {
+        width: 400px;
+        height: 300px;
+    }
+
+    .convincingInfo div {
+        padding: 10px 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .productCtaButtons {
+        font-size: 10px;
+        /* flex-wrap: wrap; */
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .productCtaButtons p {
+        padding: 8px;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .productInfoNav {
+        /* align-self: flex-start; */
+    }
+}
+
+@media (max-width: 675px) {
+    .productInfo {
+        padding: 40px 50px 50px 50px;
+    }
+
+    .bigProductImage {
+        width: 300px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+    .productInfo {
+        padding: 0px 20px 20px 20px;
+    }
+}
