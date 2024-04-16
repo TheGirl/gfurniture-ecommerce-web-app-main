@@ -16,7 +16,7 @@ import Footer from '../components/Footer/Footer';
 const Checkout = () => {
 
   const [editAdressInfo, setEditAddressInfo] = useState(false)
-  const { cartItems, setCartItems, addToCart } = useContext(cartContext);
+  const { cartItems, setCartItems } = useContext(cartContext);
   const localStorageCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
   
   function deleteCartItem(cartItemIndex) {

@@ -120,7 +120,7 @@
 
 
 import '../components/Cart.css';
-import { TrendsImg1 } from '../components';
+// import { TrendsImg1 } from '../components';
 import { RiDeleteBinFill } from "react-icons/ri"
 import { toast } from "react-toastify";
 import { IoClose } from 'react-icons/io5';
@@ -148,8 +148,9 @@ const Cart = () => {
 
   useEffect(() => {
     return( () => { 
-        return(
+        return (
             cartItems.map((cartItem) => {
+              // eslint-disable-next-line
             totalAmount = Number(cartItem.price) + totalAmount;
             setTotalAmount(totalAmount);
     }));            

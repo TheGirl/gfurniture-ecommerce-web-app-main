@@ -1,6 +1,6 @@
 import './Navbar.css'
 import { cartIcon, menuIcon, gfurniturelogo } from '../index'
-import { IoCartOutline, IoSearch, IoClose } from "react-icons/io5";
+import { IoSearch, IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useContext } from 'react'
 import cartContext from '../../CartContext';

@@ -1,7 +1,7 @@
 import './ProductInfo.css';
 import { useParams, Link } from "react-router-dom";
 import { AllProductsList } from '../Constants';
-import { FeaturedProductsImg1, FeaturedProductsImg2, FeaturedProductsImg3, FeaturedProductsImg4, BoxImage, TruckImage, HandsImage } from '../index';
+import { BoxImage, TruckImage, HandsImage } from '../index';
 import React, { useState } from 'react'
 import cartContext from '../../CartContext.jsx';
 import { useContext } from 'react';
