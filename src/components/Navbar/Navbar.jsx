@@ -57,7 +57,7 @@ const Navbar = () => {
               <img className='menuIcon' src={menuIcon} alt="" style={{transform: clicked[1] ? 'rotate(180deg)' : 'none'}} />
             </div>
 
-            <div  classname='drop-down' style={{display: clicked[1] ? 'flex' : 'none'}}>
+            <div classname='drop-down' style={{display: clicked[1] ? 'flex' : 'none'}}>
               <a href="/">Beds</a>
               <a href="/">Matresses</a>
               <a href="/">Wardrobes</a>

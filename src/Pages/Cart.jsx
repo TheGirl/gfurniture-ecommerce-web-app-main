@@ -146,17 +146,25 @@ const Cart = () => {
   //   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   // }, [cartItems]);
 
-  useEffect(() => {
-    return( () => { 
-        return (
-            cartItems.map((cartItem) => {
-              // eslint-disable-next-line
-            totalAmount = Number(cartItem.price) + totalAmount;
-            setTotalAmount(totalAmount);
-    }));            
-      }
-  )}, [cartItems]);
+  // useEffect(() => {
+  //   return( () => { 
+  //       return (
+  //           cartItems.map((cartItem) => {
+  //             // eslint-disable-next-line
+  //           totalAmount = Number(cartItem.price) + totalAmount;
+  //           setTotalAmount(totalAmount);
+  //   }));            
+  //     }
+  // )}, [cartItems]);
 
+  useEffect(() => {
+    let totalAmount = 0;
+    cartItems.forEach((cartItem) => {
+      totalAmount += Number(cartItem.price);
+    });
+    setTotalAmount(totalAmount);
+  }, [cartItems]);
+  
   function increase(cartItem) {
     // const newQuantity = cartItem.quantity + 1;
     // const filteredArray = cartItems.filter((currentArray, index) => currentArray.productId !== cartItem.productId); 
